@@ -1,6 +1,0 @@
-output:
-
-LinearRegression -> MSE: 19.91, R²: 0.91
-RandomForest -> MSE: 30.09, R²: 0.87
-✅ Saved best model: LinearRegression
-📘 Predicted Final Grade: 72.89
