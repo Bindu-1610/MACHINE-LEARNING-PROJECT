@@ -57,4 +57,5 @@ best_model = joblib.load("best_student_model.pkl")
 new_student_scaled = scaler.transform(new_student)
 predicted_grade = best_model.predict(new_student_scaled)
 
+
 print("📘 Predicted Final Grade:", round(predicted_grade[0], 2))
