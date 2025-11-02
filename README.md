@@ -1,12 +1,12 @@
 # ■ Student Final Grade Prediction
 This project uses **machine learning** to predict students' final grades based on academic and
 behavioral features such as attendance, study hours, assignments, and semester.
-We compare multiple models (Linear Regression and Random Forest) and save the best-performing
+We used model (Linear Regression) and save the best-performing
 one for future predictions.
 ---
 ## ■ Features - Load and preprocess student dataset (`CSV` file). - Train/test split for model
 evaluation. - Feature scaling using **StandardScaler**. - Train and evaluate: - **Linear Regression** -
-**Random Forest Regressor** - Select and save the **best model** using `joblib`. - Predict the final
+ - Select and save the **best model** using `joblib`. - Predict the final
 grade for a **new student**.
 ---
 ## ■ Dataset The dataset used: `students_dataset_200_with_splitnames_reordered.csv`
@@ -22,10 +22,10 @@ student-grade-prediction pip install -r requirements.txt ```
 ### Requirements ``` pandas numpy scikit-learn joblib ```
 ---
 ## ■ Model Training & Evaluation
-We train two models and evaluate them with **MSE** and **R²**.
+We train model and evaluate them with **MSE** and **R²**.
 ■ The best model is saved automatically.
 ---
-## ■ Saving Models The script saves: - `best_student_model.pkl` → Best model (by MSE) - `scaler.pkl`
+## ■ Saving Model The script saves: - `linear_regression_model.pkl` → Best model (by MSE) - `scaler.pkl`
 → Scaler for preprocessing new data
 ---
 ## ■ Predicting for a New Student
